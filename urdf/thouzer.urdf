@@ -1,19 +1,21 @@
 <robot name="thouzer">
   <link name="base_link">
     <visual>
-      <origin xyz="0 0 0" rpy="1.57 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://thouzer_description/meshes/RMS-10E2.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://thouzer_description/meshes/RMS-SZE2.STL" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="off_white">
         <color rgba="0.95 0.95 0.9 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 1.57 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://thouzer_description/meshes/RMS-10E2.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://thouzer_description/meshes/RMS-SZE2.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
 </robot>
+
+<!-- rollで+90回転、そのあとにyawで90°回転 -->
